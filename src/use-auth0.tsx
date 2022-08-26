@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { User } from '@auth0/auth0-spa-js';
+import { User } from 'auth0-spa-js-for-mtek/src';
 import Auth0Context, { Auth0ContextInterface } from './auth0-context';
 
 /**
@@ -27,4 +27,4 @@ import Auth0Context, { Auth0ContextInterface } from './auth0-context';
 const useAuth0 = <TUser extends User = User>(): Auth0ContextInterface<TUser> =>
   useContext(Auth0Context) as Auth0ContextInterface<TUser>;
 
-export default useAuth0;  
+export default useAuth0;

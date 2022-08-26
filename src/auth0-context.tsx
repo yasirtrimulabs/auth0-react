@@ -12,7 +12,7 @@ import {
   RedirectLoginResult,
   User,
   GetTokenSilentlyVerboseResponse,
-} from '@auth0/auth0-spa-js';
+} from 'auth0-spa-js-for-mtek/src';
 import { createContext } from 'react';
 import { AuthState, initialAuthState } from './auth-state';
 
@@ -66,9 +66,9 @@ export interface Auth0ContextInterface<TUser extends User = User>
    * the `auth0` cookie.
    */
   getAccessTokenSilently: {
-    (options: GetTokenSilentlyOptions & { detailedResponse: true }): Promise<
-      GetTokenSilentlyVerboseResponse
-    >;
+    (
+      options: GetTokenSilentlyOptions & { detailedResponse: true }
+    ): Promise<GetTokenSilentlyVerboseResponse>;
     (options?: GetTokenSilentlyOptions): Promise<string>;
     (options: GetTokenSilentlyOptions): Promise<
       GetTokenSilentlyVerboseResponse | string

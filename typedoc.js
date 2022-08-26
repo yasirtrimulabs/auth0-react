@@ -1,5 +1,5 @@
 module.exports = {
-  name: '@auth0/auth0-react',
+  name: 'auth0-react-for-mtek',
   out: './docs/',
   exclude: ['./src/utils.tsx', './src/reducer.tsx'],
   excludeExternals: false,

@@ -19,7 +19,7 @@ import {
   RedirectLoginResult,
   ICache,
   GetTokenSilentlyOptions,
-} from '@auth0/auth0-spa-js';
+} from 'auth0-spa-js-for-mtek/src';
 import Auth0Context, { RedirectLoginOptions } from './auth0-context';
 import { hasAuthParams, loginError, tokenError } from './utils';
 import { reducer } from './reducer';

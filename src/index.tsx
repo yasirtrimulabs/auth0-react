@@ -29,5 +29,5 @@ export {
   InMemoryCache,
   LocalStorageCache,
   Cacheable,
-} from '@auth0/auth0-spa-js';
+} from 'auth0-spa-js-for-mtek/src';
 export { OAuthError } from './errors';
